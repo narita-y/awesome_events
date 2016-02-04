@@ -9,7 +9,6 @@ class ApplicationController < ActionController::Base
   rescue_from Exception, with: :error500
   rescue_from ActiveRecord::RecordNotFound, ActionController::RoutingError, with: :error404
 
-
   private
 
   def current_user
